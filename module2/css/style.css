@@ -1,53 +1,45 @@
 * {
     font-family: sans-serif;
     font-size: 10pt;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-size: 1.75em;
     text-align: center;
+    padding: 10px;
 }
 
 #row {
-    width: 100%;
     height: auto;
-    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-#sectionTitle {
+.sectionTitle {
+    width: 80px;
+    text-align: center;
     font-size: 1.25em;
-    border: 1px solid;
-    background-color: lightskyblue;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
     position: absolute;
     top: 0px;
     right: 0px;
 }
 
-#section1 {
-    font-size: 1em;
-    position: relative;
-    background-color: lightsalmon;
-    border: 1px solid;
-    padding: 8px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+#chicken,
+#beef,
+#sushi {
+    background-color: lightskyblue;
 }
 
-#section2 {
+#section {
     font-size: 1em;
     position: relative;
     background-color: lightsalmon;
-    border: 1px solid;
-    padding: 8px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
-#section3 {
-    font-size: 1em;
-    position: relative;
-    background-color: lightsalmon;
-    border: 1px solid;
+    border: 1px solid black;
     padding: 8px;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -58,58 +50,28 @@ h1 {
 }
 
 @media (min-width: 992px) {
-    #section1 {
-        box-sizing: inherit;
-        width: 33%;
+    .lg33 {
+        width: 33.33%;
         height: auto;
         float: left;
-    }
-    #section2 {
-        box-sizing: inherit;
-        width: 33%;
-        height: auto;
-        float: left;
-    }
-    #section3 {
-        box-sizing: inherit;
-        width: 33%;
-        height: auto;
-        overflow: hidden;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    #section1 {
+    .md50 {
         box-sizing: inherit;
-        width: 49%;
+        width: 50%;
         float: left;
-        overflow: hidden;
     }
-    #section2 {
+    .md100 {
         box-sizing: inherit;
-        width: 49%;
-        float: left;
-        overflow: hidden;
-    }
-    #section3 {
-        box-sizing: inherit;
-        width: 99%;
+        width: 100%;
         overflow: hidden;
     }
 }
 
 @media (max-width: 767px) {
-    #section1 {
-        box-sizing: inherit;
-        width: 100%;
-        overflow: hidden;
-    }
-    #section2 {
-        box-sizing: inherit;
-        width: 100%;
-        overflow: hidden;
-    }
-    #section3 {
+    .sm100 {
         box-sizing: inherit;
         width: 100%;
         overflow: hidden;
